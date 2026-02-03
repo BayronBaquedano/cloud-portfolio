@@ -11,17 +11,21 @@
     <nav class="nav">
       <div class="logo">Bayron</div>
       <div class="nav-links">
-        <a href="#projects">Proyectos</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#about">Sobre mi</a>
-        <a href="#contact">Contacto</a>
+        <a href="#projects" data-i18n="nav_projects">Proyectos</a>
+        <a href="#skills" data-i18n="nav_skills">Habilidades</a>
+        <a href="#about" data-i18n="nav_about">Sobre mi</a>
+        <a href="#contact" data-i18n="nav_contact">Contacto</a>
+      </div>
+      <div class="lang-toggle" aria-label="Language selector">
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </nav>
 
     <section class="hero">
       <h1>Bayron Francisco Baquedano Ortiz</h1>
-      <p class="subtitle">Administrador Cloud de Azure (portafolio AZ-104)</p>
-      <p class="tagline">Identidad y RBAC | Redes | Lineas base de seguridad | Monitoreo y costos</p>
+      <p class="subtitle" data-i18n="hero_subtitle">Administrador Cloud de Azure (portafolio AZ-104)</p>
+      <p class="tagline" data-i18n="hero_tagline">Identidad y RBAC | Redes | Lineas base de seguridad | Monitoreo y costos</p>
 
       <div class="cta">
         <a class="btn primary" href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer">GitHub</a>
@@ -32,66 +36,66 @@
 
   <main class="container">
     <section id="projects" class="section">
-      <h2>Proyectos Destacados</h2>
+      <h2 data-i18n="projects_title">Proyectos Destacados</h2>
 
       <div class="grid">
         <article class="card">
-          <h3>Proyecto 00 - Configuracion y controles de costos</h3>
-          <p>Higiene de suscripcion, estructura base, presupuestos/alertas, enfoque de nombres y etiquetas.</p>
+          <h3 data-i18n="project_00_title">Proyecto 00 - Configuracion y controles de costos</h3>
+          <p data-i18n="project_00_desc">Higiene de suscripcion, estructura base, presupuestos/alertas, enfoque de nombres y etiquetas.</p>
           <div class="card-links">
-            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio/tree/main/00-setup">Pagina del proyecto</a>
-            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer">Repositorio</a>
+            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio/tree/main/00-setup" data-i18n="project_page">Pagina del proyecto</a>
+            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer" data-i18n="repo">Repositorio</a>
           </div>
         </article>
 
         <article class="card">
-          <h3>Proyecto 01 - Identidad y RBAC</h3>
-          <p>RBAC de minimo privilegio, asignaciones de roles, bases de gobernanza de acceso, pasos de validacion.</p>
+          <h3 data-i18n="project_01_title">Proyecto 01 - Identidad y RBAC</h3>
+          <p data-i18n="project_01_desc">RBAC de minimo privilegio, asignaciones de roles, bases de gobernanza de acceso, pasos de validacion.</p>
           <div class="card-links">
-            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio/tree/main/01-identity-rbac">Pagina del proyecto</a>
-            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer">Repositorio</a>
+            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio/tree/main/01-identity-rbac" data-i18n="project_page">Pagina del proyecto</a>
+            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer" data-i18n="repo">Repositorio</a>
           </div>
         </article>
 
         <article class="card">
-          <h3>Proyecto 02 - Redes</h3>
-          <p>VNet/subredes, NSG, diseno de reglas de trafico, estrategia de pruebas y verificacion.</p>
+          <h3 data-i18n="project_02_title">Proyecto 02 - Redes</h3>
+          <p data-i18n="project_02_desc">VNet/subredes, NSG, diseno de reglas de trafico, estrategia de pruebas y verificacion.</p>
           <div class="card-links">
-            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio/tree/main/02-networking">Pagina del proyecto</a>
-            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer">Repositorio</a>
+            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio/tree/main/02-networking" data-i18n="project_page">Pagina del proyecto</a>
+            <a href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer" data-i18n="repo">Repositorio</a>
           </div>
         </article>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <h2>Habilidades</h2>
+      <h2 data-i18n="skills_title">Habilidades</h2>
       <div class="grid two">
         <div class="card">
           <h3>Azure</h3>
           <ul>
-            <li>Suscripciones, Grupos de recursos</li>
-            <li>RBAC (asignaciones de roles, minimo privilegio)</li>
-            <li>VNets, Subredes, NSG</li>
-            <li>Conciencia de costos (presupuestos/alertas, disciplina de limpieza)</li>
+            <li data-i18n="skills_azure_1">Suscripciones, Grupos de recursos</li>
+            <li data-i18n="skills_azure_2">RBAC (asignaciones de roles, minimo privilegio)</li>
+            <li data-i18n="skills_azure_3">VNets, Subredes, NSG</li>
+            <li data-i18n="skills_azure_4">Conciencia de costos (presupuestos/alertas, disciplina de limpieza)</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Herramientas</h3>
+          <h3 data-i18n="tools_title">Herramientas</h3>
           <ul>
             <li>Git/GitHub</li>
             <li>VS Code</li>
-            <li>Azure Portal + CLI (segun corresponda)</li>
-            <li>Flujo basado en documentacion</li>
+            <li data-i18n="tools_3">Azure Portal + CLI (segun corresponda)</li>
+            <li data-i18n="tools_4">Flujo basado en documentacion</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
-      <h2>Sobre mi</h2>
+      <h2 data-i18n="about_title">Sobre mi</h2>
       <div class="card">
-        <p>
+        <p data-i18n="about_body">
           Estoy construyendo un portafolio practico de Azure alineado con AZ-104, enfocado en tareas reales de operacion:
           control de acceso, redes y despliegues con conciencia de costos. Cada proyecto incluye decisiones, validacion
           y pasos de limpieza para mantener los entornos seguros y predecibles.
@@ -100,9 +104,9 @@
     </section>
 
     <section id="contact" class="section">
-      <h2>Contacto</h2>
+      <h2 data-i18n="contact_title">Contacto</h2>
       <div class="card">
-        <p>Mejor forma de contactarme:</p>
+        <p data-i18n="contact_body">Mejor forma de contactarme:</p>
         <p>
           <a href="https://www.linkedin.com/in/bayron-francisco-baquedano-ortiz-125408230/" target="_blank" rel="noreferrer">LinkedIn</a>
           |
@@ -117,6 +121,102 @@
   </footer>
 
   <script>
+    const i18n = {
+      es: {
+        title: "Bayron Baquedano | Portafolio de Administrador Cloud en Azure",
+        nav_projects: "Proyectos",
+        nav_skills: "Habilidades",
+        nav_about: "Sobre mi",
+        nav_contact: "Contacto",
+        hero_subtitle: "Administrador Cloud de Azure (portafolio AZ-104)",
+        hero_tagline: "Identidad y RBAC | Redes | Lineas base de seguridad | Monitoreo y costos",
+        projects_title: "Proyectos Destacados",
+        project_00_title: "Proyecto 00 - Configuracion y controles de costos",
+        project_00_desc: "Higiene de suscripcion, estructura base, presupuestos/alertas, enfoque de nombres y etiquetas.",
+        project_01_title: "Proyecto 01 - Identidad y RBAC",
+        project_01_desc: "RBAC de minimo privilegio, asignaciones de roles, bases de gobernanza de acceso, pasos de validacion.",
+        project_02_title: "Proyecto 02 - Redes",
+        project_02_desc: "VNet/subredes, NSG, diseno de reglas de trafico, estrategia de pruebas y verificacion.",
+        project_page: "Pagina del proyecto",
+        repo: "Repositorio",
+        skills_title: "Habilidades",
+        skills_azure_1: "Suscripciones, Grupos de recursos",
+        skills_azure_2: "RBAC (asignaciones de roles, minimo privilegio)",
+        skills_azure_3: "VNets, Subredes, NSG",
+        skills_azure_4: "Conciencia de costos (presupuestos/alertas, disciplina de limpieza)",
+        tools_title: "Herramientas",
+        tools_3: "Azure Portal + CLI (segun corresponda)",
+        tools_4: "Flujo basado en documentacion",
+        about_title: "Sobre mi",
+        about_body: "Estoy construyendo un portafolio practico de Azure alineado con AZ-104, enfocado en tareas reales de operacion: control de acceso, redes y despliegues con conciencia de costos. Cada proyecto incluye decisiones, validacion y pasos de limpieza para mantener los entornos seguros y predecibles.",
+        contact_title: "Contacto",
+        contact_body: "Mejor forma de contactarme:"
+      },
+      en: {
+        title: "Bayron Baquedano | Azure Cloud Administrator Portfolio",
+        nav_projects: "Projects",
+        nav_skills: "Skills",
+        nav_about: "About",
+        nav_contact: "Contact",
+        hero_subtitle: "Azure Cloud Administrator (AZ-104 portfolio)",
+        hero_tagline: "Identity & RBAC | Networking | Security Baselines | Monitoring & Cost Awareness",
+        projects_title: "Featured Projects",
+        project_00_title: "Project 00 - Setup & Cost Guardrails",
+        project_00_desc: "Subscription hygiene, baseline structure, budgets/alerts, naming and tagging approach.",
+        project_01_title: "Project 01 - Identity & RBAC",
+        project_01_desc: "Least-privilege RBAC, role assignments, access governance basics, validation steps.",
+        project_02_title: "Project 02 - Networking",
+        project_02_desc: "VNet/subnets, NSGs, traffic rules design, testing/verification strategy.",
+        project_page: "Project page",
+        repo: "Repo",
+        skills_title: "Skills",
+        skills_azure_1: "Subscriptions, Resource Groups",
+        skills_azure_2: "RBAC (role assignments, least privilege)",
+        skills_azure_3: "VNets, Subnets, NSGs",
+        skills_azure_4: "Cost awareness (budgets/alerts, cleanup discipline)",
+        tools_title: "Tooling",
+        tools_3: "Azure Portal + CLI (as applicable)",
+        tools_4: "Documentation-first workflow",
+        about_title: "About",
+        about_body: "I am building a hands-on Azure portfolio aligned with AZ-104, focused on real operational tasks: access control, networking, and cost-aware deployments. Each project includes decisions, validation, and cleanup steps to keep environments safe and predictable.",
+        contact_title: "Contact",
+        contact_body: "Best way to reach me:"
+      }
+    };
+
+    const elements = document.querySelectorAll("[data-i18n]");
+    const langButtons = document.querySelectorAll(".lang-btn");
+
+    const setLanguage = (lang) => {
+      const dict = i18n[lang] || i18n.es;
+      document.documentElement.lang = lang;
+      document.title = dict.title;
+
+      elements.forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+
+      langButtons.forEach((btn) => {
+        const active = btn.getAttribute("data-lang") === lang;
+        btn.classList.toggle("active", active);
+        btn.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+
+      localStorage.setItem("lang", lang);
+    };
+
+    const savedLang = localStorage.getItem("lang") || "es";
+    setLanguage(savedLang);
+
+    langButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        setLanguage(btn.getAttribute("data-lang"));
+      });
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>

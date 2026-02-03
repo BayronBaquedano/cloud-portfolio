@@ -44,6 +44,28 @@ a:hover{text-decoration:underline}
   flex-wrap:wrap;
 }
 
+.lang-toggle{
+  display:flex;
+  gap:6px;
+  align-items:center;
+}
+
+.lang-btn{
+  padding:6px 10px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:transparent;
+  color:var(--text);
+  font-weight:600;
+  cursor:pointer;
+}
+
+.lang-btn.active{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#08101f;
+}
+
 .hero{
   padding:28px 0 10px;
 }
