@@ -1,10 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Favicon BB">
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Favicon cloud tech">
   <defs>
-    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f8d2a6" />
+    <linearGradient id="warmCloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd9b3" />
       <stop offset="100%" stop-color="#c86c4d" />
     </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f1" />
+      <stop offset="100%" stop-color="#f2d9c6" />
+    </linearGradient>
   </defs>
-  <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#warm)" stroke="#e4d6c7" stroke-width="2" />
-  <text x="32" y="41" text-anchor="middle" font-family="Fraunces, Times New Roman, serif" font-size="26" font-weight="700" fill="#2a241f" letter-spacing="1">BB</text>
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#sky)" stroke="#e4d6c7" stroke-width="2" />
+  <g fill="none" stroke="#d3b7a2" stroke-width="1.5">
+    <path d="M32 12 50 22v20L32 52 14 42V22z" />
+  </g>
+  <path d="M40 36H24a9 9 0 0 1 0-18 12 12 0 0 1 23-3 8 8 0 1 1 2 21h-9z" fill="url(#warmCloud)" stroke="#d7b79d" stroke-width="1.5" />
+  <g stroke="#8d6f5a" stroke-width="1.5" stroke-linecap="round" opacity="0.85">
+    <line x1="20" y1="44" x2="44" y2="44" />
+    <line x1="24" y1="50" x2="40" y2="50" />
+  </g>
+  <g fill="#8d6f5a">
+    <circle cx="24" cy="44" r="2" />
+    <circle cx="32" cy="44" r="2" />
+    <circle cx="40" cy="44" r="2" />
+    <circle cx="28" cy="50" r="2" />
+    <circle cx="36" cy="50" r="2" />
+  </g>
 </svg>
