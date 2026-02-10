@@ -31,13 +31,19 @@
     </nav>
 
     <section class="hero">
-      <h1>Bayron Francisco Baquedano Ortiz</h1>
-      <p class="subtitle" data-i18n="hero_subtitle">Administrador Cloud de Azure (portafolio AZ-104)</p>
-      <p class="tagline" data-i18n="hero_tagline">Identidad y RBAC | Redes | Lineas base de seguridad | Monitoreo y costos</p>
+      <div class="hero-content">
+        <h1>Bayron Francisco Baquedano Ortiz</h1>
+        <p class="subtitle" data-i18n="hero_subtitle">Administrador Cloud de Azure (portafolio AZ-104)</p>
+        <p class="tagline" data-i18n="hero_tagline">Identidad y RBAC | Redes | Lineas base de seguridad | Monitoreo y costos</p>
 
-      <div class="cta">
-        <a class="btn primary" href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/bayron-francisco-baquedano-ortiz-125408230/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/BayronBaquedano/azure-az104-portfolio" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/bayron-francisco-baquedano-ortiz-125408230/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img class="portrait" src="assets/images/profile.png" alt="Foto de Bayron" data-i18n-alt="hero_photo_alt" />
       </div>
     </section>
   </header>
@@ -148,6 +154,7 @@
         nav_contact: "Contacto",
         hero_subtitle: "Administrador Cloud de Azure (portafolio AZ-104)",
         hero_tagline: "Identidad y RBAC | Redes | Lineas base de seguridad | Monitoreo y costos",
+        hero_photo_alt: "Foto de Bayron",
         projects_title: "Proyectos Destacados",
         project_00_title: "Proyecto 00 - Configuracion y controles de costos",
         project_00_desc: "Higiene de suscripcion, estructura base, presupuestos/alertas, enfoque de nombres y etiquetas.",
@@ -181,6 +188,7 @@
         nav_contact: "Contact",
         hero_subtitle: "Azure Cloud Administrator (AZ-104 portfolio)",
         hero_tagline: "Identity & RBAC | Networking | Security Baselines | Monitoring & Cost Awareness",
+        hero_photo_alt: "Photo of Bayron",
         projects_title: "Featured Projects",
         project_00_title: "Project 00 - Setup & Cost Guardrails",
         project_00_desc: "Subscription hygiene, baseline structure, budgets/alerts, naming and tagging approach.",
@@ -209,6 +217,7 @@
     };
 
     const elements = document.querySelectorAll("[data-i18n]");
+    const altElements = document.querySelectorAll("[data-i18n-alt]");
     const langButtons = document.querySelectorAll(".lang-btn");
 
     const setLanguage = (lang) => {
@@ -220,6 +229,13 @@
         const key = el.getAttribute("data-i18n");
         if (dict[key]) {
           el.textContent = dict[key];
+        }
+      });
+
+      altElements.forEach((el) => {
+        const key = el.getAttribute("data-i18n-alt");
+        if (dict[key]) {
+          el.setAttribute("alt", dict[key]);
         }
       });
 
